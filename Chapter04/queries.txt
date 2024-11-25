@@ -315,7 +315,7 @@ GET /bigginsight/_search?size=0
     "counts_over_time": {
       "date_histogram": {                         
         "field": "time",
-        "interval": "1d"                          
+        "calendar_interval": "1d"                          
       }
     }
   }
@@ -328,7 +328,7 @@ GET /bigginsight/_search?size=0
     "counts_over_time": {
       "date_histogram": {
         "field": "time",
-        "interval": "1d",
+        "calendar_interval": "1d",
         "time_zone": "+05:30"
       }
     }
@@ -343,7 +343,7 @@ GET /bigginsight/_search?size=0
     "counts_over_time": {
       "date_histogram": {
         "field": "time",
-        "interval": "1d",
+        "calendar_interval": "1d",
         "time_zone": "+05:30"
       },
       "aggs": {
@@ -370,7 +370,7 @@ GET /bigginsight/_search?size=0
     "counts_over_time": {
       "date_histogram": {
         "field": "time",
-        "interval": "1h",
+        "calendar_interval": "1h",
         "time_zone": "+05:30"
       },
       "aggs": {
